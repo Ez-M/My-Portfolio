@@ -3,7 +3,9 @@ import React, {useState, useContext} from "react";
 
 function Navbar() { 
     return (
-    <p>Placeholder: Navbar</p>
+        <div className="NavbarMain">
+    <a>Who I am</a> <p>/</p> <a>What I do</a> <p>/</p> <a>Contact Me</a>
+    </div>
     )
   }
   
