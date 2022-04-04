@@ -9,13 +9,11 @@ import Navbar from './components/Navbar.js';
 
 function App() {
   return (
-    <div >
-      <Header/>
-      <Navbar/>
+    <div>
       <Main/>
       
     </div>
   );
-}  
+}
 
 export default App;
