@@ -19,8 +19,8 @@ function Projects() {
           <h4>News For You</h4>
           <div className="imgHolder">
           <img src={NFYThumb} alt="Project Thumbnail" />
-          <button href="https://github.com/Ez-M/Gold-Glory-Goblins" >Github</button> <br/>
-          <button href="https://blooming-mesa-06853.herokuapp.com">Live</button>
+          <a href="https://github.com/Ez-M/Gold-Glory-Goblins" >Github</a> <br/>
+          <a href="https://blooming-mesa-06853.herokuapp.com">Live</a>
           </div>
           <p>
             News For You is your standard template news site complete with a secure login, 
@@ -37,7 +37,7 @@ function Projects() {
           <h4>Gold Glory Goblins!</h4>
           <div className="imgHolder">
           <img src={logo} alt="Project Thumbnail" />
-          <button href="https://github.com/Ez-M/Gold-Glory-Goblins" >Github</button>
+          <a href="https://github.com/Ez-M/Gold-Glory-Goblins" >Github</a>
           </div>
           <p>
           This was an interesting personal project to recreate the functionality of one
