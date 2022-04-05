@@ -2,6 +2,7 @@
   margin: 0px;
   padding: 0px;
   background-color: #282c34;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 
@@ -89,17 +90,22 @@
   background-color: #282c34;
   border: none;
   color: rgb(0, 161, 0);
+
+
   padding: 10px 15px;
+
+  font-size: 16px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+
+  border: 2px black solid;
   border-radius: 10% 10% 0% 0%;
   transition-duration: 0.4s;
 }
 
 .NavbarMain .btnpad {
-  margin-left: 10px;
+  /* margin-left: 10px; */
 }
 
 
@@ -153,6 +159,11 @@
 
 }
 
+.BioMain .imgHolder {
+  min-height: 100%;
+  float: left;
+}
+
 .BioMain h2{
   text-align: center;
   margin: 0px;
@@ -173,13 +184,19 @@
 
 .BioMain .card1 img{
   display: inline;
-  float: left;
-  margin-right: 3%;
+
+  /* margin-right: 3%; */
 }
 
 .BioMain .card1 p{
   display: inline;
+  text-align: right;
 
+}
+
+.BioMain .card1 .second {
+ 
+  
 }
 
 
@@ -198,21 +215,37 @@
 }
 
 .ProjectsMain .card1 {
-  max-width: fit-content;
+  min-width: 520px;
+  max-width: 520px;
   height: 210px;
 
   margin-left: 2%;
   margin-top: 2%;
 
   border: 5px solid;
-  border-color: rgb(0, 145, 0);
+  border-color: rgb(0, 161, 0);
   
   background-color: rgb(62, 82, 119);
   overflow: hidden;
-  box-shadow: -15px 15px 15px black;
+  box-shadow: 15px 15px 15px black;
   transition: 500ms;
+  opacity: 90%;
   
 }
+
+.ProjectsMain .card1 a{
+ color: rgb(0, 161, 0);
+ margin: 1px;
+  
+}
+
+.ProjectsMain .card1 br{
+
+
+}
+
+
+
 
 
 
@@ -220,6 +253,7 @@
   box-shadow: -20px 20px 10px black;
   transition: 500ms;
   border-color: rgb(0, 161, 0);  
+  opacity: 100%;
 
 }
 
@@ -228,13 +262,114 @@
   margin-top: 5px;
 }
 
+.ProjectsMain .imgHolder{
+  height: 100%;
+  float: left;
+  width: 15%;
+  margin: 5px;
+}
+
+.ProjectsMain .imgHolder button {
+  
+  background-color: rgb(0, 161, 0);
+  /* 
+.button-41  */
+  background-color: initial;
+  background-image: linear-gradient(-180deg, rgb(84, 132, 221), rgb(17, 47, 104));
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
+  color: rgb(0, 161, 0);
+  cursor: pointer;
+  display: inline-block;
+  font-family: Inter,-apple-system,system-ui,Roboto,"Helvetica Neue",Arial,sans-serif;
+  height: 44px;
+  line-height: 44px;
+  outline: 0;
+  overflow: hidden;
+  padding: 0 20px;
+  pointer-events: auto;
+  position: relative;
+  text-align: center;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: top;
+  white-space: nowrap;
+  width: 100%;
+  z-index: 9;
+  border: 0;
+}
+.ProjectsMain .imgHolder button:hover {
+  background: rgb(17, 47, 104);
+}
+
+
 .ProjectsMain .card1 img{
   /* di */
-  width: 20%;
-  float: left;
+  width: 100%;
+  /* float: left; */
+  
 }
 
 .ProjectsMain .card1 p{
+  /* background-color: rgb(62, 82, 119); */
+  width: 500px;
+  display: inline;
+
+  transition: 200ms;
+  margin: 0px 5px 5px 5px;
+  
+}
+
+.ProjectsMain .card2 *{
+  background-color: rgb(62, 82, 119);
+}
+
+
+.ProjectsMain .card2 {
+  min-width: 520px;
+  max-width: 520px;
+  height: 210px;
+
+  margin-left: auto;
+  margin-right: 2%;
+  margin-top: 2%;
+
+  border: 5px solid;
+  border-color: rgb(5, 129, 5);
+  
+  background-color: rgb(62, 82, 119);
+  overflow: hidden;
+  box-shadow: -15px 15px 15px black;
+  transition: 500ms;
+  opacity: 90%;
+  
+  
+}
+
+
+
+.ProjectsMain .card2:hover {
+  box-shadow: 20px 20px 10px black;
+  transition: 500ms;
+  border-color: rgb(0, 161, 0);  
+  opacity: 100%;
+
+}
+
+.ProjectsMain .card2 h4{
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+.ProjectsMain .card2 img{
+  /* di */
+  width: 100%;
+
+  /* float: left; */
+}
+
+.ProjectsMain .card2 p{
   /* background-color: rgb(62, 82, 119); */
   width: 500px;
 
@@ -243,6 +378,10 @@
   
 }
 
+.ProjectsMain .card2 a{
+  color: rgb(0, 161, 0);
+   
+ }
 
 
 
@@ -257,3 +396,139 @@
 }
 
 
+
+
+
+
+
+
+@media screen and (max-width: 992px) {
+
+  .ProjectsMain .card1 {
+    /* max-width: fit-content; */
+    height: 210px;
+  
+    margin-left: auto;
+    margin-top: 2%;
+    margin-right: auto;
+  
+    border: 5px solid;
+    border-color: rgb(0, 145, 0);
+    
+    background-color: rgb(62, 82, 119);
+    overflow: hidden;
+    box-shadow: -15px 0px 15px black;
+    transition: 500ms;
+    
+  }
+
+  .ProjectsMain .card2 {
+    /* max-width: fit-content; */
+    height: 210px;
+  
+    margin-left: auto;
+    margin-top: 2%;
+    margin-right: auto;
+  
+    border: 5px solid;
+    border-color: rgb(0, 145, 0);
+    
+    background-color: rgb(62, 82, 119);
+    overflow: hidden;
+    box-shadow: -15px 0px 15px black;
+    transition: 500ms;
+    
+  }
+
+  .ProjectsMain .card2:hover {
+    box-shadow: -20px 20px 10px black;
+    transition: 500ms;
+    border-color: rgb(0, 161, 0);  
+  
+  }
+
+}
+
+@media screen and (max-width: 650px) {
+  .BioMain .pHolder{
+    padding: 1rem;
+    text-align: left;
+  }
+
+  .BioMain .pHolder p{
+    background: none;
+    border-radius: 5%;
+
+  }
+
+
+  .BioMain .imgHolder {
+    min-height: 100%;
+    float: none;
+    
+  }
+
+  .BioMain .imgHolder img{
+    margin-left: auto;
+    margin-right: auto;  
+    display: block;
+  }
+
+
+  .NavbarMain {
+    background-color: #282c34;
+    text-align: center;
+    /* font-weight: bold; */
+    color: black;
+    /* padding-top: 10px; */
+    /* padding-right: 10px; */
+  
+  }
+
+  .NavbarMain button{
+    width: 15%;
+  }
+  
+  .NavbarMain .btnpad {
+    
+  }
+  
+
+  .ProjectsMain .card1 {
+    max-width: fit-content;
+    height: 210px;
+  
+    margin-left: 0;
+    margin-top: 2%;
+    margin-right: 0;
+  
+    border: 5px solid;
+    border-color: rgb(0, 145, 0);
+    
+    background-color: rgb(62, 82, 119);
+    overflow: hidden;
+    box-shadow: -15px 15px 15px black;
+    transition: 500ms;
+    
+  }
+
+  .ProjectsMain .card2 {
+    max-width: fit-content;
+    height: 210px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 2%;
+  
+    border: 5px solid;
+    border-color: rgb(0, 145, 0);
+    
+    background-color: rgb(62, 82, 119);
+    overflow: hidden;
+    box-shadow: -15px 15px 15px black;
+    transition: 500ms;
+    
+  }
+
+  
+
+}
