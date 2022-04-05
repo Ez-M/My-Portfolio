@@ -1,14 +1,28 @@
-import React, {useState, useContext} from "react";
+import React, { useState, useContext } from "react";
+import logo from "../imgs/tunabase.png";
 
-
-
-function Bio() { 
-    return (
-        <div>
-    <p>Placeholder: Bio</p> <br/>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+function Bio() {
+  return (
+    <div className="BioMain">
+      <h2>WELCOME</h2> <br />
+      <h4>ALLOW ME TO INTRODUCE MYSELF</h4>
+      <div className="card1">
+        <img src={logo}></img>
+        <p>
+          I'm Ezequiel Martinez, a recent graduate of UCLA Extention School's
+          full-stack development program, a burgeoning software developer, and a
+          life-long student with the constant desire to learn and improve. I've
+          worked in a number of industries and positions, including freelancing
+          first as a writer and now as a web developer. I'm always looking for a
+          new project, and I'm not afraid of learning some new tricks to get the
+          job done. <br /> <br /> If you're looking to key me in on a new
+          project, or would like to reach out for any reason, don't hesitate to
+          contact me directly. If you're still considering it, or just
+          interested in my work, feel free to look around and explore what I do.{" "}
+        </p>
+      </div>
     </div>
-    )
-  }
-  
-  export default Bio;
+  );
+}
+
+export default Bio;

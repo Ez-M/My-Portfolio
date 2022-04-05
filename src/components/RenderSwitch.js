@@ -14,7 +14,7 @@ function RenderSwitch() {
     
    function calcSwitch() {
     switch(pageState) {
-        case 'Home': return false; 
+        case 'Home': return <Bio/>; 
         case 'Bio': return <Bio/>;
         case 'Contact': return <Contact/>
         case 'Projects': return <Projects/>
@@ -24,7 +24,7 @@ function RenderSwitch() {
     
     return (
     
-        <div>
+        <div className="RenderSwitch">
     
     <SwitchTransition mode="out-in">
       <CSSTransition
