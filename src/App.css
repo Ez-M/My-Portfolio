@@ -1,13 +1,19 @@
+:root {
+  /* --main-blue: #272727; */
+  --main-blue: #232323;
+  --main-green: rgb(0, 161, 0);
+  --light-green: #50d799;
+  --slate: #000000;
+  --dark-green: #35664d;
+  --textGrey: rgb(0, 207, 28);
+}
+
 * {
   margin: 0px;
   padding: 0px;
-  background-color: #282c34;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
 
-
-.App {
-  text-align: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 .App-logo {
@@ -19,50 +25,31 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-
-  img {
-    /* animation: App-logo-spin infinite 5s linear; */
-  }
-
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
+/* 
+.mainMain {
+  background-color: var(--main-blue);
+} */
 
 .RenderSwitch {
-  background-color: #282c34;
-  color: whitesmoke
+  background-color: var(--main-blue);
+  height: 100vh;
 }
-
 
 /*  */
 /* .HeaderMain  area */
 /*  */
 
 .HeaderMain {
-  
   border: 5px solid;
   border-color: black;
 }
 
 .HeaderMain img {
-  
   padding: 10px;
 }
-.HeaderMain h1{
+.HeaderMain h1 {
   display: inline;
   color: blue;
   text-align: center;
@@ -72,25 +59,26 @@
 /* NavbarMain area */
 /*  */
 
-
 .NavbarMain {
-  background-color: #282c34;
+  background-color: var(--main-blue);
   text-align: center;
   font-weight: bold;
   color: black;
   padding-top: 10px;
   /* padding-right: 10px; */
-
 }
-.NavbarMain p{
+.NavbarMain p {
   display: inline;
 }
 
-.NavbarMain button{
-  background-color: #282c34;
+.NavbarMain button {
+  /* background-color: var(--main-blue); */
+
+  background-color: var(--main-blue);
   border: none;
   color: rgb(0, 161, 0);
-
+  border: none;
+  /* color: rgb(0, 161, 0); */
 
   padding: 10px 15px;
 
@@ -108,13 +96,12 @@
   margin-left: 10px;
 } */
 
-
 .NavbarMain img:hover {
   transform: rotateX(75deg);
   opacity: 0%;
   transition-duration: 5s;
 }
-.NavbarMain button:hover{
+.NavbarMain button:hover {
   background-color: rgb(0, 161, 0);
   border: none;
   color: #282c34;
@@ -156,7 +143,8 @@
 /*  */
 
 .BioMain {
-
+  background-color: var(--main-blue);
+  /* color: ; */
 }
 
 .BioMain .imgHolder {
@@ -164,41 +152,135 @@
   float: left;
 }
 
-.BioMain h2{
+.BioMain .titleCard {
+  /* background-color: var(--main-green); */
+  background-image: linear-gradient(var(--main-green), var(--main-blue));
+  width: auto;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+}
+
+/* .BioMain .titleCard .subCard {  
+  width: fit-content;
+  
   text-align: center;
-  margin: 0px;
+
+  align-items: center;
+} */
+
+.BioMain .titleCard h2 {
+  text-align: center;
+  margin: auto;
+  margin-bottom: 2rem;
+  padding: 0px;
+  color: white;
+
+  font-size: 5rem;
+}
+.BioMain .titleCard h4 {
+  text-align: center;
+  margin: auto;
+  margin-top: 1rem;
   padding: 0px;
 
-}
-.BioMain h4{
-  text-align: center;
-  margin: 0px;
-  padding: 0px;
+  color: white;
+
+  font-size: 4rem;
 }
 
 .BioMain .card1 {
   margin-left: auto;
   margin-right: auto;
   max-width: 60%;
+  height: 400px;
+  /* background-color: var(--slate); */
+  padding: 10px;
+  /* border:   black solid; */
+  /* border-left: -10px; */
+  border-bottom: 0px;
+
+  margin-bottom: 5rem;
+
+  /* box-shadow: 0px 5px 15px 3px black; */
 }
 
-.BioMain .card1 img{
+.BioMain .card1 img {
   display: inline;
 
   /* margin-right: 3%; */
 }
 
-.BioMain .card1 p{
+.BioMain .card1 p {
   display: inline;
   text-align: right;
-
+  font-weight: bold;
+  font-size: medium;
+  color: var(--textGrey);
 }
 
-.BioMain .card1 .second {
- 
+.BioMain .card2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  margin-bottom: 3rem;
+  /* justify-content: center; */
+}
+
+.BioMain .card2 .left {
+  /* background-color: var(--main-green); */
+  background-color: black;
+  border: var(--main-green) solid;
+  border-left: 0px;
+
+  width: 50vw;
+  height: 250px;
+  text-align: center;
+}
+
+.BioMain .card2 .right {
+  /* background-color: black;
+  border: var(--main-green) solid;
+  border-right: 0px; */
+
+  width: auto;
+  height: 250px;
+  text-align: center;
+}
+
+.BioMain .card3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
   
+  /* justify-content: center; */
 }
 
+.BioMain .card3 .left {
+  /* background-color: var(--main-green); */
+  /* background-color: black;
+  border: var(--main-green) solid;
+  border-left: 0px; */
+
+  width: 50vw;
+  height: 250px;
+  text-align: center;
+}
+
+.BioMain .card3 .right {
+  background-color: black;
+  border: var(--main-green) solid;
+  border-right: 0px;
+
+  width: 50vw;
+  height: 250px;
+  text-align: center;
+}
 
 /*  */
 /* Projects Section */
@@ -210,13 +292,13 @@
   margin-right: auto;
 }
 
-.ProjectsMain .card1 *{
-  background-color: rgb(62, 82, 119);
+.ProjectsMain .card1 * {
+  background-color: var(--slate);
 }
 
 .ProjectsMain .card1 {
-  min-width: 520px;
-  max-width: 520px;
+  min-width: 650px;
+  max-width: 650px;
   height: 210px;
 
   margin-left: 2%;
@@ -224,72 +306,63 @@
 
   border: 5px solid;
   border-color: rgb(0, 161, 0);
-  
-  background-color: rgb(62, 82, 119);
+
+  background-color: var(--slate);
   overflow: hidden;
   /* box-shadow: 15px 15px 15px black; */
   transition: 500ms;
   opacity: 90%;
-  
 }
 
-.ProjectsMain .card1 a{
- color: rgb(0, 161, 0);
- margin: 1px;
-  
+.ProjectsMain .card1 a {
+  color: rgb(0, 161, 0);
+  margin: 1px;
 }
 
-.ProjectsMain .card1 br{
-
-
+.ProjectsMain .card1 br {
 }
-
-
-
-
-
 
 .ProjectsMain .card1:hover {
   /* box-shadow: -20px 20px 10px black; */
   transition: 500ms;
-  border-color: rgb(0, 161, 0);  
+  border-color: rgb(0, 161, 0);
 
-  box-shadow: rgba(0, 161, 0, 0.4) -5px 5px, 
-  rgba(0, 161, 0, 0.3) -10px 10px, 
-  rgba(0, 161, 0, 0.2) -15px 15px, 
-  rgba(0, 161, 0, 0.1) -20px 20px, 
-  rgba(0, 161, 0, 0.05) -25px 25px;
+  box-shadow: rgba(0, 161, 0, 0.4) -5px 5px, rgba(0, 161, 0, 0.3) -10px 10px,
+    rgba(0, 161, 0, 0.2) -15px 15px, rgba(0, 161, 0, 0.1) -20px 20px,
+    rgba(0, 161, 0, 0.05) -25px 25px;
 
   opacity: 100%;
-
 }
 
-.ProjectsMain .card1 h4{
+.ProjectsMain .card1 h4 {
   margin-left: 5px;
   margin-top: 5px;
 }
 
-.ProjectsMain .imgHolder{
+.ProjectsMain .imgHolder {
   height: 100%;
   float: left;
   width: 15%;
   margin: 5px;
 }
 
-.ProjectsMain .imgHolder a{
-
-    
+.ProjectsMain .imgHolder a {
   background-color: rgb(0, 161, 0);
   /* 
 .button-41  */
   background-color: initial;
-  background-image: linear-gradient(-180deg, rgb(84, 132, 221), rgb(17, 47, 104));
+  background-image: linear-gradient(
+    -180deg,
+    rgb(84, 132, 221),
+    rgb(17, 47, 104)
+  );
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
   color: rgb(0, 161, 0);
   cursor: pointer;
   display: inline-block;
-  font-family: Inter,-apple-system,system-ui,Roboto,"Helvetica Neue",Arial,sans-serif;
+  font-family: Inter, -apple-system, system-ui, Roboto, "Helvetica Neue", Arial,
+    sans-serif;
   height: 44px;
   line-height: 44px;
   outline: 0;
@@ -315,32 +388,29 @@
   background: rgb(17, 47, 104);
 }
 
-
-.ProjectsMain .card1 img{
+.ProjectsMain .card1 img {
   /* di */
   width: 100%;
   /* float: left; */
-  
 }
 
-.ProjectsMain .card1 p{
+.ProjectsMain .card1 p {
   /* background-color: rgb(62, 82, 119); */
   width: 500px;
   display: inline;
+  color: var(--main-green);
 
   transition: 200ms;
   margin: 0px 5px 5px 5px;
-  
 }
 
-.ProjectsMain .card2 *{
-  background-color: rgb(52, 78, 126);
+.ProjectsMain .card2 * {
+  /* background-color: rgb(52, 78, 126); */
 }
-
 
 .ProjectsMain .card2 {
-  min-width: 520px;
-  max-width: 520px;
+  min-width: 650px;
+  max-width: 650px;
   height: 210px;
 
   margin-left: auto;
@@ -349,60 +419,49 @@
 
   border: 5px solid;
   border-color: rgb(5, 129, 5);
-  
-  background-color: rgb(62, 82, 119);
+
+  background-color: var(--slate);
   overflow: hidden;
   /* box-shadow: -15px 15px 15px black; */
   transition: 500ms;
   opacity: 90%;
-  
-  
 }
-
-
 
 .ProjectsMain .card2:hover {
   /* box-shadow: 20px 20px 10px black; */
 
-  box-shadow: rgba(0, 161, 0, 0.4) 5px 5px, 
-  rgba(0, 161, 0, 0.3) 10px 10px, 
-  rgba(0, 161, 0, 0.2) 15px 15px, 
-  rgba(0, 161, 0, 0.1) 20px 20px, 
-  rgba(0, 161, 0, 0.05) 25px 25px;
+  box-shadow: rgba(0, 161, 0, 0.4) 5px 5px, rgba(0, 161, 0, 0.3) 10px 10px,
+    rgba(0, 161, 0, 0.2) 15px 15px, rgba(0, 161, 0, 0.1) 20px 20px,
+    rgba(0, 161, 0, 0.05) 25px 25px;
   transition: 500ms;
-  border-color: rgb(0, 161, 0);  
+  border-color: rgb(0, 161, 0);
   opacity: 100%;
-
 }
 
-.ProjectsMain .card2 h4{
+.ProjectsMain .card2 h4 {
   margin-left: 5px;
   margin-top: 5px;
 }
 
-.ProjectsMain .card2 img{
+.ProjectsMain .card2 img {
   /* di */
   width: 100%;
 
   /* float: left; */
 }
 
-.ProjectsMain .card2 p{
+.ProjectsMain .card2 p {
   /* background-color: rgb(62, 82, 119); */
   width: 500px;
-
+  display: inline;
+  color: var(--main-green);
   transition: 200ms;
   margin: 0px 5px 5px 5px;
-  
 }
 
-.ProjectsMain .card2 a{
+.ProjectsMain .card2 a {
   color: rgb(0, 161, 0);
-   
- }
-
-
-
+}
 
 @keyframes App-logo-spin {
   from {
@@ -413,85 +472,99 @@
   }
 }
 
-
-
-
-
-
-
+@keyframes pulsator {
+  from {
+    background-color: rgb(28, 48, 83);
+  }
+  to {
+    background-color: rgb(37, 61, 102);
+  }
+}
 
 @media screen and (max-width: 992px) {
-
   .ProjectsMain .card1 {
     /* max-width: fit-content; */
     height: 210px;
-  
+
     margin-left: auto;
     margin-top: 2%;
     margin-right: auto;
-  
+
     border: 5px solid;
     border-color: rgb(0, 145, 0);
-    
-    background-color: rgb(62, 82, 119);
+
+    /* background-color: rgb(62, 82, 119); */
     overflow: hidden;
     box-shadow: -15px 0px 15px black;
     transition: 500ms;
-    
+
+    position: relative;
+  }
+
+  .ProjectsMain .card1:hover {
+    /* box-shadow: -20px 20px 10px black; */
+
+    box-shadow: rgba(0, 161, 0, 0.4) 0px 5px, rgba(0, 161, 0, 0.3) 0px 10px,
+      rgba(0, 161, 0, 0.2) 0px 15px, rgba(0, 161, 0, 0.1) 0px 20px,
+      rgba(0, 161, 0, 0.05) 0px 25px;
+
+    z-index: 5;
+    transition: 500ms;
+    border-color: rgb(0, 161, 0);
   }
 
   .ProjectsMain .card2 {
     /* max-width: fit-content; */
     height: 210px;
-  
+
     margin-left: auto;
     margin-top: 2%;
     margin-right: auto;
-  
+
     border: 5px solid;
     border-color: rgb(0, 145, 0);
-    
-    background-color: rgb(62, 82, 119);
+
+    /* background-color: rgb(62, 82, 119); */
     overflow: hidden;
     box-shadow: -15px 0px 15px black;
     transition: 500ms;
-    
+    z-index: 5;
   }
 
   .ProjectsMain .card2:hover {
-    box-shadow: -20px 20px 10px black;
-    transition: 500ms;
-    border-color: rgb(0, 161, 0);  
-  
-  }
+    /* box-shadow: -20px 20px 10px black; */
 
+    box-shadow: rgba(0, 161, 0, 0.4) 0px 5px, rgba(0, 161, 0, 0.3) 0px 10px,
+      rgba(0, 161, 0, 0.2) 0px 15px, rgba(0, 161, 0, 0.1) 0px 20px,
+      rgba(0, 161, 0, 0.05) 0px 25px;
+
+    z-index: 5;
+    transition: 500ms;
+    border-color: rgb(0, 161, 0);
+  }
 }
 
 @media screen and (max-width: 650px) {
-  .BioMain .pHolder{
+  .BioMain .pHolder {
     padding: 1rem;
     text-align: left;
   }
 
-  .BioMain .pHolder p{
+  .BioMain .pHolder p {
     background: none;
     border-radius: 5%;
-
   }
-
 
   .BioMain .imgHolder {
     min-height: 100%;
     float: none;
-    
   }
 
-  .BioMain .imgHolder img{
+  .BioMain .imgHolder img {
     margin-left: auto;
-    margin-right: auto;  
+    margin-right: auto;
     display: block;
   }
-
 
   .NavbarMain {
     background-color: #282c34;
@@ -500,34 +573,30 @@
     color: black;
     /* padding-top: 10px; */
     /* padding-right: 10px; */
-  
   }
 
-  .NavbarMain button{
+  .NavbarMain button {
     width: 15%;
   }
-  
+
   .NavbarMain .btnpad {
-    
   }
-  
 
   .ProjectsMain .card1 {
     max-width: fit-content;
     height: 210px;
-  
+
     margin-left: 0;
     margin-top: 2%;
     margin-right: 0;
-  
+
     border: 5px solid;
     border-color: rgb(0, 145, 0);
-    
-    background-color: rgb(62, 82, 119);
+
+    /* background-color: rgb(62, 82, 119); */
     overflow: hidden;
-    box-shadow: -15px 15px 15px black;
+    box-shadow: -15px 0px 15px black;
     transition: 500ms;
-    
   }
 
   .ProjectsMain .card2 {
@@ -536,17 +605,13 @@
     margin-left: 0;
     margin-right: 0;
     margin-top: 2%;
-  
+
     border: 5px solid;
     border-color: rgb(0, 145, 0);
-    
-    background-color: rgb(62, 82, 119);
+
+    /* background-color: rgb(62, 82, 119); */
     overflow: hidden;
     box-shadow: -15px 15px 15px black;
     transition: 500ms;
-    
   }
-
-  
-
 }

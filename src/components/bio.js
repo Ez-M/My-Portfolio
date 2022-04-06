@@ -4,8 +4,14 @@ import logo from "../imgs/tunabase.png";
 function Bio() {
   return (
     <div className="BioMain">
+
+      <div className="titleCard">
+
+        {/* <div className="subCard"> */}
       <h2>WELCOME</h2> <br />
       <h4>ALLOW ME TO INTRODUCE MYSELF</h4>
+      {/* </div> */}
+      </div>
       <div className="card1">
 
           <div className="imgHolder">
@@ -27,6 +33,20 @@ function Bio() {
           </div>
         
       </div>
+
+      <div className="card2">
+        <div className="left"> <h3>Placeholder</h3></div>
+        <div className="right"><h3>Placeholder</h3></div>
+        
+        </div>
+
+        <div className="card3">
+        <div className="left"> <h3>Placeholder</h3></div>
+        <div className="right"><h3>Placeholder</h3></div>
+        
+        </div>
+
+
     </div>
   );
 }

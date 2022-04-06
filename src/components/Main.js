@@ -14,9 +14,11 @@ import RenderSwitch from "./RenderSwitch.js";
 function Main() { 
     return (
         <GeneralProvider>
+            
             <Navbar/>
             <Header/>
             <RenderSwitch/>
+            
     {/* <p>Placeholder: Main</p> */}
     </GeneralProvider>
     )
