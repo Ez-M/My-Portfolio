@@ -16,11 +16,24 @@ function Navbar() {
 
 
     return (
+        
         <div className="NavbarMain">
+        
+
+            <div className="titleCard">
+
+{/* <div className="subCard"> */}
+        <h2>Ezequiel Martinez</h2> <br />
+        <h4>Freelance Developer</h4>
+</div> 
             
-    <button onClick={()=> nav('Bio')}>Who I Am</button>  <button className="btnpad" onClick={()=> nav('Projects')}>What I do</button>
-     <img src={logo} alt="Logo Placeholder" width='80px'/>  
-    <button onClick={ ()=> nav('Services')}>My Services</button> <button className="btnpad" onClick={()=> nav('Contact')}>Contact Me</button>
+            
+        <div className="buttonContainer">
+    <button onClick={()=> nav('Bio')}>Who I Am</button>  <button onClick={()=> nav('Projects')}>What I do</button>
+     
+    <button onClick={ ()=> nav('Services')}>My Services</button> <button onClick={()=> nav('Contact')}>Contact Me</button>
+    </div>
+
     </div>
     )
   }

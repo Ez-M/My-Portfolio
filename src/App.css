@@ -1,19 +1,21 @@
 :root {
   /* --main-blue: #272727; */
-  --main-blue: #232323;
-  --main-green: rgb(0, 161, 0);
+  --main-blue: rgb(170, 170, 170);
+  /* --main-green: rgb(0, 161, 0); */
+  --main-green: rgb(0, 110, 255);
   --light-green: #50d799;
   --slate: #000000;
   --dark-green: #35664d;
-  --textGrey: rgb(0, 207, 28);
+  /* --textGrey: rgb(0, 207, 28); */
+  --textGrey: black;
 }
 
 * {
   margin: 0px;
   padding: 0px;
-
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family: 'Raleway', sans-serif;
+  /* font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif; */
 }
 
 .App-logo {
@@ -32,55 +34,71 @@
   background-color: var(--main-blue);
 } */
 
-.RenderSwitch {
-  background-color: var(--main-blue);
+.parallax {
+  /* The image used */
+  background-image: "./imgs/NFYthumbnail.JPG";
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.mainContainer {
+  background-color: #6b6b6b25;
   height: 100vh;
+
+  margin: 2% 2% 0% 2%;
+
 }
 
-/*  */
-/* .HeaderMain  area */
-/*  */
+.RenderSwitch {
+  /* background-color: var(--main-blue); */
+  /* height: 100%; */
+  /* background-image: linear-gradient(var(--main-green), rgb(255, 255, 255)); */
 
-.HeaderMain {
-  border: 5px solid;
-  border-color: black;
+  
 }
 
-.HeaderMain img {
-  padding: 10px;
-}
-.HeaderMain h1 {
-  display: inline;
-  color: blue;
-  text-align: center;
-}
 
-/*  */
-/* NavbarMain area */
-/*  */
 
 .NavbarMain {
-  background-color: var(--main-blue);
+  /* background-color: var(--main-blue); */
+  /* background-image: linear-gradient(rgb(255, 255, 255), var(--main-green)); */
+  /* background-image: url(./imgs/stripes.jpg); */
+  /* background-color: blue; */
   text-align: center;
   font-weight: bold;
   color: black;
-  padding-top: 10px;
+  padding: 10px;
   /* padding-right: 10px; */
+  height: 10%;
 }
 .NavbarMain p {
   display: inline;
 }
 
+
+.NavbarMain .buttonContainer {
+  margin-right: 0%;
+  margin-left: auto;
+  width: fit-content;
+}
+
 .NavbarMain button {
   /* background-color: var(--main-blue); */
 
-  background-color: var(--main-blue);
+  background-color: rgba(255, 255, 255, 0);
   border: none;
-  color: rgb(0, 161, 0);
+  color: var(--main-green);
   border: none;
   /* color: rgb(0, 161, 0); */
 
-  padding: 10px 15px;
+  padding: 10px 20px;
 
   font-size: 16px;
   text-align: center;
@@ -88,24 +106,15 @@
   display: inline-block;
 
   /* border: 1px black solid; */
-  border-radius: 10% 10% 0% 0%;
+  border-radius: 16px ;
   transition-duration: 0.4s;
 }
 
-/* .NavbarMain .btnpad {
-  margin-left: 10px;
-} */
-
-.NavbarMain img:hover {
-  transform: rotateX(75deg);
-  opacity: 0%;
-  transition-duration: 5s;
-}
 .NavbarMain button:hover {
-  background-color: rgb(0, 161, 0);
-  border: none;
-  color: #282c34;
-  padding: 10px 15px;
+  background-color:var(--main-green);
+  /* border: none; */
+  color: white;
+  /* padding: 10px 15px; */
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -113,13 +122,33 @@
   transition-duration: 0.4s;
 }
 
-.NavbarMain div {
-  display: inline;
+
+
+.NavbarMain img:hover {
+  transform: rotateX(75deg);
+  opacity: 0%;
+  transition-duration: 5s;
 }
 
-/*  */
-/* RenderSwitch stuff for transitions */
-/*  */
+
+.NavbarMain .titleCard {
+  /* display: inline; */
+  float: left;
+}
+
+.NavbarMain h4 {
+  color: var(--main-green)
+}
+
+
+
+
+.NavbarMain h2 {
+
+}
+
+
+
 .fade-enter {
   opacity: 0;
 }
@@ -143,18 +172,25 @@
 /*  */
 
 .BioMain {
-  background-color: var(--main-blue);
+  /* background-color: var(--main-blue); */
   /* color: ; */
-}
 
-.BioMain .imgHolder {
-  min-height: 100%;
-  float: left;
+    /* The image used */
+    /* background-image: url("./imgs/kek2.jpg"); */
+
+    /* Full height */
+    /* height: 100%;  */
+  
+    /* Create the parallax scrolling effect */
+    /* background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
 }
 
 .BioMain .titleCard {
   /* background-color: var(--main-green); */
-  background-image: linear-gradient(var(--main-green), var(--main-blue));
+  /* background-image: linear-gradient(var(--main-green), rgb(255, 255, 255)); */
   width: auto;
   height: 500px;
   display: flex;
@@ -172,7 +208,7 @@
   align-items: center;
 } */
 
-.BioMain .titleCard h2 {
+/* .BioMain .titleCard h2 {
   text-align: center;
   margin: auto;
   margin-bottom: 2rem;
@@ -190,9 +226,10 @@
   color: white;
 
   font-size: 4rem;
-}
+} */
 
 .BioMain .card1 {
+  /* background-color: blueviolet; */
   margin-left: auto;
   margin-right: auto;
   max-width: 60%;
@@ -208,8 +245,18 @@
   /* box-shadow: 0px 5px 15px 3px black; */
 }
 
+.BioMain .imgHolder {
+  min-height: 100%;
+  max-width: 20%;
+  margin-right: 2%;
+  /* background-color: white; */
+  float: left;
+  display: inline;
+}
+
 .BioMain .card1 img {
   display: inline;
+  max-width: 100%;
 
   /* margin-right: 3%; */
 }
@@ -217,8 +264,20 @@
 .BioMain .card1 p {
   display: inline;
   text-align: right;
-  font-weight: bold;
-  font-size: medium;
+  font-weight: 400;
+  font-size:larger;
+  color: var(--textGrey);
+}
+
+.BioMain .pHolder {
+  /* margin-left: 5px; */
+}
+
+.BioMain .card1 span {
+  display: inline;
+  text-align: right;
+  font-weight: 500;
+  font-size:larger;
   color: var(--textGrey);
 }
 
@@ -579,8 +638,7 @@
     width: 15%;
   }
 
-  .NavbarMain .btnpad {
-  }
+
 
   .ProjectsMain .card1 {
     max-width: fit-content;

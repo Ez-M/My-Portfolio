@@ -15,9 +15,11 @@ function Main() {
     return (
         <GeneralProvider>
             
+            <div className="mainContainer">
             <Navbar/>
-            <Header/>
+            {/* <Header/> */}
             <RenderSwitch/>
+            </div>
             
     {/* <p>Placeholder: Main</p> */}
     </GeneralProvider>
