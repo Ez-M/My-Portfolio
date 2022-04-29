@@ -3,7 +3,7 @@ export const General = createContext();
 
 
 const GeneralProvider = (props) => {
-  const [pageState, setPageState] = useState('Home'); 
+  const [pageState, setPageState] = useState('Bio'); 
 
     return (
          <General.Provider 

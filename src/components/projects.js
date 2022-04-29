@@ -50,19 +50,14 @@ function Projects() {
         </div>
 
         <div className="card1">
-          <h4>Project Title</h4>
+          <h4>More to come</h4>
           <div className="imgHolder">
           <img src={logo} alt="Project Thumbnail" />
           </div>
           <p>
-            Lorem ipsum dolor sit amet, consectetur di incidiit, sed do eiusmod
-            tempor incidi elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-            cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum.
+            I'm always looking to share more projects, and I'll likely be adding more to these cards very soon, but I only like to do so once I'm personally satisfied with how done they are. 
+            If you would like to be a part of my little gallery here, feel free to contact me so we can talk about your project.
+            Be it a personal website, a database for your company, or whatever else you might have in mind, I'd absolutely love to hear about
           </p>
         </div>
       </div>

@@ -36,7 +36,7 @@
 
 .parallax {
   /* The image used */
-  background-image: "./imgs/NFYthumbnail.JPG";
+  background-image: url("./imgs/openSign.jpg");
 
   /* Full height */
   height: 100%; 
@@ -49,19 +49,42 @@
 }
 
 .mainContainer {
-  background-color: #6b6b6b25;
+  /* background-color: #6b6b6b25; */
+  background-color: var(--main-blue);
   height: 100vh;
 
   margin: 2% 2% 0% 2%;
+  
 
+}
+
+.rsCon {
+  display: flex;
+
+  height: auto;
 }
 
 .RenderSwitch {
   /* background-color: var(--main-blue); */
   /* height: 100%; */
   /* background-image: linear-gradient(var(--main-green), rgb(255, 255, 255)); */
+  width: 72%;
 
   
+}
+
+.asideLeft {
+  background-color: #50d799;
+  height: auto;
+  width: 14%;
+  text-align: center;
+}
+
+.asideRight {
+  background-color: #50d799;
+  height: auto;
+  width: 14%;
+  text-align: center;
 }
 
 
@@ -125,6 +148,18 @@
 }
 
 
+.NavbarMain .btnActive {
+  background-color:var(--main-green);
+  /* border: none; */
+  color: white;
+  /* padding: 10px 15px; */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+}
+
 
 .NavbarMain img:hover {
   transform: rotateX(75deg);
@@ -173,34 +208,9 @@
 /* Bio Section */
 /*  */
 
-.BioMain {
-  /* background-color: var(--main-blue); */
-  /* color: ; */
 
-    /* The image used */
-    /* background-image: url("./imgs/kek2.jpg"); */
 
-    /* Full height */
-    /* height: 100%;  */
-  
-    /* Create the parallax scrolling effect */
-    /* background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; */
-}
 
-.BioMain .titleCard {
-  /* background-color: var(--main-green); */
-  /* background-image: linear-gradient(var(--main-green), rgb(255, 255, 255)); */
-  width: auto;
-  height: 500px;
-  display: flex;
-  flex-direction: column;
-
-  align-items: center;
-  justify-content: center;
-}
 
 /* .BioMain .titleCard .subCard {  
   width: fit-content;
@@ -232,9 +242,8 @@
 
 .BioMain .card1 {
   /* background-color: blueviolet; */
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 60%;
+  /* margin-left: auto;
+  margin-right: auto; */
   height: 400px;
   /* background-color: var(--slate); */
   padding: 10px;
@@ -247,12 +256,15 @@
   /* box-shadow: 0px 5px 15px 3px black; */
 }
 
+
+
+
 .BioMain .imgHolder {
   min-height: 100%;
   max-width: 20%;
-  margin-right: 2%;
+  margin-left: 2%;
   /* background-color: white; */
-  float: left;
+  float: right;
   display: inline;
 }
 
@@ -351,6 +363,11 @@
   width: 80%;
   margin-left: auto;
   margin-right: auto;
+  
+}
+
+.ProjectsMain p {
+  font-size: 17px;
 }
 
 
@@ -416,8 +433,12 @@
   border: 2px solid var(--main-green);
   /* color: rgb(0, 161, 0); */
 
-  padding: 8px 20%;
+  /* padding: 8px 20%; */
   /* margin-left: 15px; */
+
+  width: 100%;
+  padding-top: 5%;
+  padding-bottom: 5%;
 
   font-size: 20px;
   text-align: center;
@@ -451,7 +472,7 @@
   /* background-color: rgb(62, 82, 119); */
   width: 500px;
   display: inline;
-  color: var(--main-green);
+  /* color: var(--main-green); */
 
   transition: 200ms;
   margin: 0px 5px 5px 5px;

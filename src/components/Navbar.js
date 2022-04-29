@@ -9,9 +9,38 @@ function Navbar() {
 
     const {pageState, setPageState} = useContext(General) //importing context
 
-    function nav(x) {
-        setPageState(x)
+   
+    var btnBio = '';
+    var btnPro = '';
+    var btnCon = '';
+
+    switch (pageState) {
+        case 'Bio':
+            var btnBio = 'btnActive';
+            var btnPro = '';
+            var btnCon = '';
+            break;
+        case 'Projects':
+            var btnBio = '';
+            var btnPro = 'btnActive';
+            var btnCon = '';
+            break;
+        case 'Contact':
+            var btnBio = '';
+            var btnPro = '';
+            var btnCon = 'btnActive'; 
+            break;
+
+
+
     }
+
+    function nav(x) {
+        setPageState(x);
+    }
+
+
+
 
 
 
@@ -29,9 +58,11 @@ function Navbar() {
             
             
         <div className="buttonContainer">
-    <button onClick={()=> nav('Bio')}>Who I Am</button>  <button onClick={()=> nav('Projects')}>What I do</button>
-     
-    <button onClick={ ()=> nav('Services')}>My Services</button> <button onClick={()=> nav('Contact')}>Contact Me</button>
+    <button className={btnBio} onClick={()=> nav('Bio')}>Who I Am</button>  <button className={btnPro} onClick={()=> nav('Projects')}>What I do</button>
+
+    {/* <button onClick={ ()=> nav('Services')}>My Services</button>  */}
+
+     <button className={btnCon} onClick={()=> nav('Contact')}>Contact Me</button>
     </div>
 
     </div>

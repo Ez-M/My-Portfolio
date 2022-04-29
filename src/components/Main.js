@@ -15,7 +15,7 @@ function Main() {
     return (
         <GeneralProvider>
             
-            <div className="mainContainer">
+            <div className="mainContainer ">
             <Navbar/>
             {/* <Header/> */}
             <RenderSwitch/>

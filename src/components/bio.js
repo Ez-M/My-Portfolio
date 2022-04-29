@@ -8,6 +8,8 @@ function Bio() {
 
      
        {/* </div>  */}
+    {/* <div className="asideLeft"> asideLeft</div> */}
+
       <div className="card1">
 
           <div className="imgHolder">
@@ -24,11 +26,13 @@ function Bio() {
           job done. </p> <br /> <br />  <p className="second">If you're looking to key me in on a new
           project, or would like to reach out for any reason, don't hesitate to
           contact me directly. If you're still considering it, or just
-          interested in my work, feel free to look around and explore what I do.
+          interested in my work, feel free to take a look around and explore what I do.
             </p>
           </div>
         
       </div>
+
+      {/* <div className="asideRight">asideRight</div> */}
 
       {/* <div className="card2">
         <div className="left"> <h3>Placeholder</h3></div>
