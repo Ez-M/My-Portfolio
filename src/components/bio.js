@@ -12,21 +12,15 @@ function Bio() {
 
       <div className="card1">
 
-          <div className="imgHolder">
+          {/* <div className="imgHolder">
            <img src={Headshot}></img>
-          </div>
+          </div> */}
         <div className="pHolder">
           <p>
-          I'm Ezequiel Martinez, a recent graduate of </p><span>UCLA Extention School's
-          full-stack development program</span> <p>, a burgeoning software developer, and a
-          life-long student with the constant desire to learn and improve. I've
-          worked in a number of industries and positions, including freelancing
-          first as a writer and now as a web developer. I'm always looking for a
-          new project, and I'm not afraid of learning some new tricks to get the
-          job done. </p> <br /> <br />  <p className="second">If you're looking to key me in on a new
-          project, or would like to reach out for any reason, don't hesitate to
-          contact me directly. If you're still considering it, or just
-          interested in my work, feel free to take a look around and explore what I do.
+          Modern, clean, agile websites built just for the needs of you and your business.  </p>
+          <br /> <br />  
+          <p className="second"> If you're still considering it, or just inerested in my work,
+           feel free to take a look around and explore what I do.
             </p>
           </div>
         

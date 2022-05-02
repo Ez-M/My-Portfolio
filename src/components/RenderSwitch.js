@@ -24,7 +24,7 @@ function RenderSwitch() {
     
     return (
       <div className="rsCon">
-      <div className="asideLeft">asideLeft</div>
+
         <div className="RenderSwitch">
     
     <SwitchTransition mode="out-in">
@@ -39,7 +39,7 @@ function RenderSwitch() {
          </CSSTransition>
     </SwitchTransition>
    </div>
-        <div className="asideRight">asideRight</div>
+        {/* <div className="asideRight">asideRight</div> */}
         </div>
         
     

@@ -17,6 +17,8 @@ function Main() {
             
             <div className="mainContainer ">
             <Navbar/>
+
+            <div className="parallax"></div>
             {/* <Header/> */}
             <RenderSwitch/>
             </div>
