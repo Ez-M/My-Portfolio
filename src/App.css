@@ -44,7 +44,7 @@ body, html {
 
 
   /* Full height */
-  height: 80%; 
+  height: 60%; 
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -73,7 +73,9 @@ body, html {
   /* background-color: var(--main-blue); */
   /* height: 100%; */
   /* background-image: linear-gradient(var(--main-green), rgb(255, 255, 255)); */
+  background-color: black;
   width: 100%;
+  min-height: 100vh;
    
 }
 
@@ -94,16 +96,22 @@ body, html {
 
 
 .NavbarMain {
-  /* background-color: var(--main-blue); */
-  /* background-image: linear-gradient(rgb(255, 255, 255), var(--main-green)); */
-  /* background-image: url(./imgs/stripes.jpg); */
-  /* background-color: blue; */
+background-color: white;
+
   text-align: center;
   font-weight: bold;
   color: black;
   padding: 10px;
-  /* padding-right: 10px; */
+
+  position: fixed;
+  top: 0%;
+  bottom: auto;
+  left: 0%;
+  right: 0%;
+  padding-right: 10px;
   height: 10%;
+  width: 100%;
+  z-index: 1000;
 }
 .NavbarMain p {
   display: inline;
@@ -111,7 +119,7 @@ body, html {
 
 
 .NavbarMain .buttonContainer {
-  margin-right: 0%;
+  margin-right: 2.5%;
   margin-left: auto;
   width: fit-content;
 }
@@ -175,6 +183,7 @@ body, html {
 .NavbarMain .titleCard {
   /* display: inline; */
   float: left;
+  margin-left: 2%;
 }
 
 .NavbarMain h4 {
@@ -245,14 +254,11 @@ body, html {
 } */
 
 .BioMain .card1 {
-  /* background-color: blueviolet; */
-  /* margin-left: auto;
-  margin-right: auto; */
-  height: 400px;
+  background-color: white;
+  height: 100%;
   /* background-color: var(--slate); */
   padding: 10px;
-  /* border:   black solid; */
-  /* border-left: -10px; */
+
   border-bottom: 0px;
 
   margin-bottom: 5rem;
@@ -283,7 +289,15 @@ body, html {
   /* display: inline; */
   text-align: center;
   font-weight: 400;
-  font-size:larger;
+  font-size:1.625rem;
+  color: var(--textGrey);
+}
+
+.BioMain .card1 h2 {
+  /* display: inline; */
+  text-align: center;
+  font-weight: 400;
+  font-size:5.2rem;
   color: var(--textGrey);
 }
 

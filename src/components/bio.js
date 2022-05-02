@@ -9,6 +9,7 @@ function Bio() {
      
        {/* </div>  */}
     {/* <div className="asideLeft"> asideLeft</div> */}
+    
 
       <div className="card1">
 
@@ -16,15 +17,22 @@ function Bio() {
            <img src={Headshot}></img>
           </div> */}
         <div className="pHolder">
+          <h2>Modern</h2>
+          <h2>Flexible</h2>
+          <h2>Responsive</h2>
           <p>
-          Modern, clean, agile websites built just for the needs of you and your business.  </p>
+           websites built just for the needs of you and your business</p>
           <br /> <br />  
-          <p className="second"> If you're still considering it, or just inerested in my work,
-           feel free to take a look around and explore what I do.
-            </p>
+          <p className="second"> Professional businesses need a professional website, 
+          in today's modern world your digital storefront is your first, and often 
+          the only chance to make an impression. Make sure to put your best foot forward 
+          with quick prose and a sleek communicative design.  
+          
+          </p>
           </div>
         
       </div>
+      
 
       {/* <div className="asideRight">asideRight</div> */}
 
