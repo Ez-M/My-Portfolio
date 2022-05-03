@@ -5,36 +5,45 @@ import Headshot from "../imgs/Headshot.jpg";
 function Bio() {
   return (
     <div className="BioMain">
-
-     
-       {/* </div>  */}
-    {/* <div className="asideLeft"> asideLeft</div> */}
-    
+      {/* </div>  */}
+      {/* <div className="asideLeft"> asideLeft</div> */}
 
       <div className="card1">
-
-          {/* <div className="imgHolder">
+        {/* <div className="imgHolder">
            <img src={Headshot}></img>
           </div> */}
         <div className="pHolder">
           <h2>Modern</h2>
           <h2>Flexible</h2>
           <h2>Responsive</h2>
-          <p>
-           websites built just for the needs of you and your business</p>
-          <br /> <br />  
+          <p className="first">
+            websites built just for the needs of you and your business
+          </p>
+          <br /> <br />
           <p className="second"> Professional businesses need a professional website, 
           in today's modern world your digital storefront is your first, and often 
           the only chance to make an impression. Make sure to put your best foot forward 
           with quick prose and a sleek communicative design.  
           
           </p>
-          </div>
-        
+        </div>
       </div>
-      
 
+      <div className="parallax2"> </div>
       {/* <div className="asideRight">asideRight</div> */}
+
+      <div className="card2">
+       
+        <div className="pHolder">
+          <p className="second">
+            Professional businesses need a professional website, in today's
+            modern world your digital storefront is your first, and often the
+            only chance to make an impression. It's more important than ever to put your best foot forward with quick prose and a sleek communicative design.
+          </p>
+
+          <p className="first">I'm here to help </p>
+        </div>
+      </div>
 
       {/* <div className="card2">
         <div className="left"> <h3>Placeholder</h3></div>
@@ -47,8 +56,6 @@ function Bio() {
         <div className="right"><h3>Placeholder</h3></div>
         
         </div> */}
-
-
     </div>
   );
 }
