@@ -309,6 +309,7 @@ background-color: white;
 
 .BioMain .card1 .first {
   color: var(--main-green);
+  padding-top: 10px;
   
 }
 
