@@ -21,6 +21,7 @@ function Main() {
             <div className="parallax"></div>
             {/* <Header/> */}
             <RenderSwitch/>
+            
             </div>
             
     {/* <p>Placeholder: Main</p> */}
